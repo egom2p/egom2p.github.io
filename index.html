@@ -284,7 +284,7 @@ Understanding multimodal signals in egocentric vision, such as RGB video, depth,
                     <div id="cam" class="section-container section-offset">
                         <h3 id="cam-track">Egocentric Camera Tracking</h3>
                             <h4>EgoExo4D</h4> 
-                                <p class="lead text-justify">Compared with specialist SOTA models that require geometry test-time optimization, our feed-forward EgoM2P can predict camera trajectories with better translation and rotation</p>
+                                <p class="lead text-justify">Compared to specialist SOTA models that require geometry-based test-time optimization, our feed-forward EgoM2P predicts camera trajectories with better translation and rotation accuracy, achieving an inference speed of 300+ FPS</p>
                                     <div class="images-container" style="display: flex; justify-content: center; gap:10px; width: 80%; margin: auto;">
                                         <div style="flex: 1 1 calc(90% - 20px); max-width: calc(90% - 20px); box-sizing: border-box; margin: 10px;">
                                     <video style="width: 100%; height: auto;" controls autoplay loop muted playsinline>
@@ -385,11 +385,24 @@ Understanding multimodal signals in egocentric vision, such as RGB video, depth,
                     <div id="depth" class="section-container section-offset">
                         <h3 id="depth-estimation">Egocentric Monocular Depth Estimation</h3>
                             <h4 >H2O</h4>
-                                <p class="lead text-justify">Coming Soon...</p>
+                                <p class="lead text-justify">Baselines requires sequence-level optimization which is time-consuming. Our model achieves at least 30 times faster inference speed, while ensuring temporal consistency</p>
+                                <div class="images-container" style="display: flex; justify-content: center; gap:10px; width: 80%; margin: auto;">
+                                <div style="flex: 1 1 calc(90% - 20px); max-width: calc(90% - 20px); box-sizing: border-box; margin: 10px;">
+                                    <video style="width: 100%; height: auto;" controls autoplay loop muted playsinline>
+                                        <source src="video/h2o.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div></div>
                             <h4 >HOI4D (unseen)</h4>
-                                <p class="lead text-justify">Coming Soon...</p>
+                                <p class="lead text-justify">EgoM2P has strong generalization abilities to unseen datasets</p>
                         <div class="images-container" style="display: flex; justify-content: center; gap:10px; width: 80%; margin: auto;">
                             <!-- Images or content go here -->
+                            <div style="flex: 1 1 calc(90% - 20px); max-width: calc(90% - 20px); box-sizing: border-box; margin: 10px;">
+                                    <video style="width: 100%; height: auto;" controls autoplay loop muted playsinline>
+                                        <source src="video/hoi4d.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
                         </div>
                     </div>
     
@@ -399,21 +412,21 @@ Understanding multimodal signals in egocentric vision, such as RGB video, depth,
                     <div id="rgb" class="section-container section-offset">
                         <h3 id="video-synthesis">Conditional Egocentric Video Synthesis</h3>
                             <h4 >HoloAssist</h4>
-                            <p class="lead text-justify">Coming Soon...</p>
+                            <p class="lead text-justify">EgoM2P demonstrates superior performance to generate depth-aligned egocentric RGB videos, minimizing hallucinations and produces realistic finger motions</p>
                         <div class="images-container" style="display: flex; justify-content: center; gap:10px; width: 80%; margin: auto;">
                             <!-- Images or content go here -->
+                            <div style="flex: 1 1 calc(90% - 20px); max-width: calc(90% - 20px); box-sizing: border-box; margin: 10px;">
+                                    <video style="width: 100%; height: auto;" controls autoplay loop muted playsinline>
+                                        <source src="video/holo.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
                         </div>
                     </div>
-    
-                    <br>
-    
                 </div>
             </div>
         </div>
     </section>
-    
-    
-
 
       <section id="video" class="">
          <div class="container">
