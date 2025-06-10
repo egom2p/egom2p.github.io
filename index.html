@@ -283,11 +283,36 @@ Understanding multimodal signals in egocentric vision, such as RGB video, depth,
                     <!-- Egocentric Camera Tracking Section -->
                     <div id="cam" class="section-container section-offset">
                         <h3 id="cam-track">Egocentric Camera Tracking</h3>
-                            <h4>EgoExo4D</h4>
+                            <h4>EgoExo4D</h4> 
+                                <p class="lead text-justify">Compared with specialist SOTA models that require geometry test-time optimization, our feed-forward EgoM2P can predict camera trajectories with better translation and rotation</p>
+                                    <div class="images-container" style="display: flex; justify-content: center; gap:10px; width: 80%; margin: auto;">
+                                        <div style="flex: 1 1 calc(90% - 20px); max-width: calc(90% - 20px); box-sizing: border-box; margin: 10px;">
+                                    <video style="width: 100%; height: auto;" controls autoplay loop muted playsinline>
+                                        <source src="video/egoexo-cam-1.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                    </div>
+
+                                <p class="lead text-justify">EgoM2P can also predict smooth and plausible camera trajectories in the sense that it learns to capture the uniqueness of egocentric head motion, while baselines suffer from temporal jittering</p>
+                                    <div class="images-container" style="display: flex; justify-content: center; gap:10px; width: 80%; margin: auto;">
+                                        <div style="flex: 1 1 calc(90% - 20px); max-width: calc(90% - 20px); box-sizing: border-box; margin: 10px;">
+                                    <video style="width: 100%; height: auto;" controls autoplay loop muted playsinline>
+                                        <source src="video/egoexo-cam-2.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                    </div>
+
                             <h4 >ADT (unseen)</h4>
-                                <p class="lead text-justify">Coming Soon...</p>
+                                <p class="lead text-justify">EgoM2P effectively predicts realistic egocentric camera trajectories, even on unseen dataset ADT</p>
                         <div class="images-container" style="display: flex; justify-content: center; gap:10px; width: 80%; margin: auto;">
-                            <!-- Images or content go here -->
+                            <div style="flex: 1 1 calc(90% - 20px); max-width: calc(90% - 20px); box-sizing: border-box; margin: 10px;">
+                                    <video style="width: 100%; height: auto;" controls autoplay loop muted playsinline>
+                                        <source src="video/adt-cam.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
                         </div>
                     </div>
     
@@ -298,7 +323,7 @@ Understanding multimodal signals in egocentric vision, such as RGB video, depth,
                         <h3 id="gaze-estimation">Gaze Estimation in Egocentric Videos</h3>
                             <h4 >EgoExo4D</h4>
                             <p class="lead text-justify">EgoM2P can better understand human intentions</p>
-                            <div class="content-container" style="display: flex; justify-content: space-between; max-width: 70%;">
+                            <div class="content-container" style="display: flex; justify-content: space-between">
                                 <div style="flex: 1 1 calc(33.33% - 20px); max-width: calc(33.33% - 20px); box-sizing: border-box; margin: 10px;">
                                     <img src="images/gt.png" alt="Image 1" style="width: 100%; height: auto; display: block; border: 1px solid #ccc;" />
                                 </div>
