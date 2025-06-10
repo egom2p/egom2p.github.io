@@ -63,22 +63,18 @@
       <!-- Dropdown button with submenus -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#method" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          TODO
+          Method
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <!-- Dropdown items with links to different sections -->
-          <a class="dropdown-item" href="#training">TODO</a>
-          <a class="dropdown-item" href="#eval">TODO</a>
+          <a class="dropdown-item" href="#training">Pretraining</a>
+          <!--<a class="dropdown-item" href="#eval">TODO</a>-->
         </div>
       </li>
 
-                  <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="#rendering">TODO</a>
-                  </li>
-
                     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#applications" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Applications
+          Multitasking
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <!-- Dropdown items with links to different sections -->
@@ -151,7 +147,7 @@
 
                 <div class="downloads">
                     <br><h3>
-                    <a class="publink" href="" target="_blank" style="text-decoration: none"> Arxiv <i class="fa fa-print"></i></a> &nbsp;
+                    <a class="publink" href="https://www.arxiv.org/abs/2506.07886" target="_blank" style="text-decoration: none"> Arxiv <i class="fa fa-print"></i></a> &nbsp;
                     &nbsp;&nbsp;
                     <a class="publink" href="https://github.com/ligengen/EgoM2P" target="_blank" style="text-decoration: none"> Code <i class="fa fa-github"></i></a>
                     <h3>
@@ -206,8 +202,8 @@ Understanding multimodal signals in egocentric vision, such as RGB video, depth,
          <div class="container" id="training">
             <div class="row">
                <div class="col-lg-10 mx-auto">
-                   <h2>TODO</h2> <br>
-                  <h3>TODO</h3>
+                   <h2>Method</h2> <br>
+                  <h3>Pretraining</h3>
                   <div class="text-center">
                      <!-- <p><img class="img-fluid" alt="teaser" src="https://via.placeholder.com/1500x600"></p> -->
 <!--                     <p><img class="img-fluid" alt="teaser" src="images/teaser.png"></p>-->
@@ -224,12 +220,12 @@ Understanding multimodal signals in egocentric vision, such as RGB video, depth,
                         <font color="#6F6D6D " size="4">
                             (1) We train VQ-VAE tokenizers for camera trajectories and gaze dynamics, and adopt Cosmos tokenizers to tokenize RGB and depth streams. High-dimensional input modalities, including videos, gaze dynamics, and camera trajectories, are compressed into discrete tokens to serve as our training database. (2) Our EgoM2P follows the architecture of T5-Base. We perform multimodal masked pretraining, where we randomly sample a fixed number of input and target tokens from our token database without overlap. For simplicity, we only visualize four frames here.
                         </font>
-                  <br>
+                  <!--<br>
                   <h3>TODO</h3>
                   <p class="lead text-justify">
                 
                 </p>
-                        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-end;">-->
         
         <!--
         <div style="text-align: center;">
@@ -266,7 +262,6 @@ Understanding multimodal signals in egocentric vision, such as RGB video, depth,
 
     </div>
 
-           <br> <br>
 
 
     </div>
@@ -274,35 +269,17 @@ Understanding multimodal signals in egocentric vision, such as RGB video, depth,
                </div>
             </div>
          </div>
-
-     <section id="rendering" class="">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-10 mx-auto">
-                   <h2>TODO</h2> <br>
-                  <div class="text-center">
-                     <!-- <p><img class="img-fluid" alt="teaser" src="https://via.placeholder.com/1500x600"></p> -->
-<!--                     <p><img class="img-fluid" alt="teaser" src="images/teaser.png"></p>-->
-                       <p class="lead text-justify">
-<!--                           <b>Dataset Overview</b>. -->
-
-                    </p>
-                  </div>
-
-<!--                   <p class="lead text-justify">-->
-<!--                       TODO-->
-<!--                   </p>-->
-               </div>
-            </div>
-         </div>
-      </section>
     
     <section id="applications" class="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h2>Applications</h2> <br>
-    
+                    <h2>Multitasking</h2> <br>
+                    <div class="text-center">
+                     <!-- <p><img class="img-fluid" alt="teaser" src="https://via.placeholder.com/1500x600"></p> -->
+<!--                     <p><img class="img-fluid" alt="teaser" src="images/teaser.png"></p>-->
+                       <p class="lead text-justify"> We benchmark EgoM2P's multitasking abilities with SOTA specialist models in downstream tasks, including egocentric perception and synthesis. We also benchmark it on unseen datasets without any fine-tuning to show the strong generalization ability of the pretrained feature. </p>
+                  </div>
                     <!-- Egocentric Camera Tracking Section -->
                     <div id="cam" class="section-container section-offset">
                         <h3 id="cam-track">Egocentric Camera Tracking</h3>
@@ -393,17 +370,17 @@ Understanding multimodal signals in egocentric vision, such as RGB video, depth,
                <div class="col-lg-10 mx-auto">
                   <h2 class="section-title-tc">Citation</h2>
                   <br>
-                  <a class="publink" target="_blank" href=""><b>
+                  <a class="publink" target="_blank" href="https://www.arxiv.org/abs/2506.07886"><b>
                     EgoM2P: Egocentric Multimodal Multitask Pretraining </b><br></a>
                     Gen Li, Yutong Chen, Yiqian Wu, Kaifeng Zhao, Marc Pollefeys, Siyu Tang<br>
                   <br><br>
 <pre style="display: block; background-color: #f5f5f5; border: 1px solid #ccc; border-radius: 4px">
-@article{li2025EgoM2P,
+@article{li2025egom2p,
     title={EgoM2P: Egocentric Multimodal Multitask Pretraining},
     author={Li, Gen and Chen, Yutong and Wu, Yiqian and Zhao, Kaifeng and Pollefeys, Marc and Tang, Siyu},
-    journal={TODO},
+    journal={arXiv preprint arXiv:2506.07886},
     year={2025}
-  }  
+  }
 </pre>
                </div>
             </div>
